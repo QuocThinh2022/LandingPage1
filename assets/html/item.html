@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CodeShop</title>
+   <link rel="icon" href="./assets/images/icon.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./assets/css/reset.css">
+   <link rel="stylesheet" href="./assets/css/base.css">
+   <link rel="stylesheet" href="./assets/css/styles.css">
+   <style>
+      .navbar ul #home:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: calc(-100vw/1500*2);
+         width: 100%;
+         height: calc(100vw/1500*2);
+         background-color: var(--color-one);
+         border-radius: 5px;
+         transition: 0.5s;
+      }
+   </style>
+</head>
+<body>
+   <header class="header">
+      <div class="logo">
+         <div class="box1"><i class="fa-solid fa-radiation"></i></div>
+         <div class="box">
+            <a href="/">
+               <i class="fa-solid fa-radiation"></i>
+               <span>CodeShop</span>
+            </a>
+         </div>
+      </div>
+
+      <nav class="navbar">
+         <i class="fa-solid fa-bars bars"></i>
+         <div class="dropdown">
+            <ul>
+               <li id="home">
+                  <a class="item"  href="/">Home</a>
+                  <!-- <span><i class="fa-solid fa-radiation"></i></span>
+                  <div></div> -->
+               </li>
+               <li id="smartphone">
+                  <a class="item" href="./assets/html/smartphone.html">SmartPhone</a>
+                  <!-- <div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#">Apple</a></li>
+                           <li><a href="#">SamSung</a></li>
+                           <li><a href="#">Xiaomi</a></li>
+                           <li><a href="#">Realme</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="hover"></div> -->
+               </li>
+               <li id="laptop">
+                  <a class="item"  href="./assets/html/laptop.html">Laptop</a>
+                  <!-- <div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#">Apple</a></li>
+                           <li><a href="#">Asus</a></li>
+                           <li><a href="#">Dell</a></li>
+                           <li><a href="#">Lenovo</a></li>
+                        </ul>
+                     </div>
+                  </div> -->
+               </li>
+               <li id="tablet">
+                  <a  class="item" href="./assets/html/tablet.html">Tablet</a>
+                  <!-- <div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#">Apple</a></li>
+                           <li><a href="#">SamSung</a></li>
+                           <li><a href="#">Xiaomi</a></li>
+                           <li><a href="#">Realme</a></li>
+                        </ul>
+                     </div>
+                  </div> -->
+               </li>
+            </ul>
+         </div>
+         
+      </nav>
+
+
+      <form action="#" class="search-bar">
+         <input type="text" placeholder="Search...">
+         <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+      </form>
+
+      <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+      
+      <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+      <div class="social">
+         <ul>
+            <li><a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-facebook"></i></span></a></li>
+            <li><a class="youtube" title="Youtube" target="_blank" href="https://youtube.com/@crazycode3366"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+            <li><a class="tiktok" title="Tiktok" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-tiktok"></i></span></a></li>
+            <li><a class="twitter" title="Twitter" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+         </ul>
+      </div>
+   </header>
+
+   <main class="container">
+      
+      <section class="section section-0">
+         <div><img class="img" src="./assets/images/section-0_samsung.jpg" alt=""></div>
+         <!-- <div><img class="img" src="./assets/images/section-0.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_1.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_3.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_4.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_5.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_6.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="./assets/images/section-0_7.jpg" alt=""></div> -->
+      </section>
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div.img>img)+span.name-item+span.price))) -->
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div>img.striker)+(div.img>img)+(.info>(span.name-item+span.price))))) -->
+
+      <section class="section section-1">
+         <div class="header">
+            <a href="./assets/html/smartphone.html"><h4>APPLE AUTHORISED RESELLER</h4></a>
+            
+         </div> 
+         <div class="content apple">
+            <div class="item item-1">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone14ProMax.png" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 14 Pro Max</span>
+                  <span class="price">27.750.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            </div>
+            <div class="item item-2">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-3">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13Pro.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13 Pro</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-4">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13_2.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">17.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-5">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13Pro_2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+
+            <div class="item item-1">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone14ProMax.png" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 14 Pro Max</span>
+                  <span class="price">27.750.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            </div>
+            <div class="item item-2">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-3">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13Pro.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13 Pro</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-4">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13_2.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">17.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+            <div class="item item-5">
+               <div><img class="striker" src="./assets/images/apple.png" alt=""></div>
+               <div class="img"><img src="./assets/images/iphone13Pro_2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">IPhone 13</span>
+                  <span class="price">23.490.000 đ</span>
+               </div>
+               <div class="note">
+                  <span class="bag">KM</span> <label title="Giảm tới 300.000đ khi thanh toán qua VNPAY (Áp dụng từ 08/03- 31/03)">Giảm tới 300.000đ khi thanh toán qu...</label>
+                      <strong class="text-orange">VÀ 9 KM KHÁC</strong>
+              </div>
+            
+            </div>
+         </div>
+      </section>
+      
+      <section class="section section-2">
+         <div class="header">
+            <a href="./assets/html/laptop.html">
+               <h4>Laptop</h4>
+            </a>
+         </div>
+         <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Pro 16 M2 Max/12-core CPU/38-core GPU/32GB/1TB</span>
+                  <span class="price">89.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Pro 14 M2 Pro/12-core CPU/19-core GPU/16GB/1TB</span>
+                  <span class="price">69.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max3.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air M2 13.6" 2022 - 256GB</span>
+                  <span class="price">26.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max4.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air M2 13.6" 2022 - 256GB</span>
+                  <span class="price">26.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max5.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air 13" 2020 - M1 256GB</span>
+                  <span class="price">18.990.000 đ</span>
+               </div>
+            
+            </div>
+
+            <div class="item item-1 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Pro 16 M2 Max/12-core CPU/38-core GPU/32GB/1TB</span>
+                  <span class="price">89.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Pro 14 M2 Pro/12-core CPU/19-core GPU/16GB/1TB</span>
+                  <span class="price">69.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max3.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air M2 13.6" 2022 - 256GB</span>
+                  <span class="price">26.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max4.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air M2 13.6" 2022 - 256GB</span>
+                  <span class="price">26.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/macbookPro14M2Max5.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">MacBook Air 13" 2020 - M1 256GB</span>
+                  <span class="price">18.990.000 đ</span>
+               </div>
+            
+            </div>
+         </div>
+      </section>
+
+      <section class="section section-3">
+         <div class="header">
+            <a href="./assets/html/tablet.html">
+               <h4>TABLET</h4>
+            </a>
+         </div>
+         <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet1.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M2 12.9" 5G/256GB</span>
+                  <span class="price">34.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M2 12.9" 5G/256GB</span>
+                  <span class="price">34.490.000 đ</span>
+               </div>
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet3.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M1 12.9" 2021 Wifi/512GB</span>
+                  <span class="price">31.890.000 đ</span>
+               </div>
+              
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet4.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Air 5 M1 10.9" 2022 Wifi/256GB</span>
+                  <span class="price">17.490.000 đ</span>
+               </div>
+              
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet5.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Mini 6 8.3" 2021 Wifi/64GB</span>
+                  <span class="price">12.590.000 đ</span>
+               </div>
+               
+            </div>
+
+            <div class="item item-1 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet1.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M2 12.9" 5G/256GB</span>
+                  <span class="price">34.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet2.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M2 12.9" 5G/256GB</span>
+                  <span class="price">34.490.000 đ</span>
+               </div>
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet3.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Pro M1 12.9" 2021 Wifi/512GB</span>
+                  <span class="price">31.890.000 đ</span>
+               </div>
+              
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet4.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Air 5 M1 10.9" 2022 Wifi/256GB</span>
+                  <span class="price">17.490.000 đ</span>
+               </div>
+              
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="./assets/images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="./assets/images/tablet5.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Apple iPad Mini 6 8.3" 2021 Wifi/64GB</span>
+                  <span class="price">12.590.000 đ</span>
+               </div>
+               
+            </div>
+         </div>
+      </section>
+      
+      <div class="social2">
+         <div class="square item1">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Product</h2>
+               <a href="#"><i class="fa-regular fa-circle-check"></i></a>
+            </div>
+         </div>
+         
+         <div class="square item2">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>FreeShip</h2>
+               <a href="#"><i class="fa-solid fa-truck-fast"></i></a>
+            </div>
+         </div>
+         <div class="square item3">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Returns</h2>
+               <a href="#"><i class="fa-solid fa-rotate"></i></a>
+            </div>
+         </div>
+      </div>
+
+      <footer id="footer">
+         <div class="box">
+            <div class="item item1">
+               <span>Hỗ Trợ - Dịch Vụ</span>
+               <span>Mua hàng trả góp</span>
+               <span>Tra cứu đơn hàng</span>
+               <span>Chính sách bảo hành</span>
+               <span>Chính sách bảo mật</span>
+               <span>Câu hỏi thường gặp</span>
+            </div>
+            <div class="item item2">
+               <span>Thông tin liên hệ</span>
+               <span>Bán hàng Online</span>
+               <span>Chăm sóc khách hàng</span>
+               <span>Hỗ trợ kỹ thuật</span>
+               <span>Liên hệ</span>
+            </div>
+            <div class="item item3">
+               <div class="atm-box">
+                  <h2 class="atm-content">Thanh toán miễn phí</h2>
+                  <div class="atm">
+                     <img src="./assets/images/logo-atm.png" alt="">
+                     <img src="./assets/images/logo-jcb.png" alt="">
+                     <img src="./assets/images/logo-master.png" alt="">
+                     <img src="./assets/images/logo-samsungpay.png" alt="">
+                     <img src="./assets/images/logo-visa.png" alt="">
+                     <img src="./assets/images/logo-vnpay.png" alt="">
+                  </div>   
+               </div>
+            </div>
+            <!-- <div class="item item4">
+               ???
+            </div> -->
+         </div>
+         <div class="box2">
+            <span>Trường Đại Học Cần Thơ - Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ.</span>
+         </div>
+      </footer>
+   </main>
+
+   
+   <div class="snow_wrap">
+      <div class="snow"></div>
+   </div>
+</body>
+</html>

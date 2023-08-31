@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CodeShop</title>
+   <link rel="icon" href="../images/icon.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../css/reset.css">
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/laptop.css">
+   <style>
+      .navbar ul #smartphone:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: calc(-100vw/1500*2);
+         width: 100%;
+         height: calc(100vw/1500*2);
+         background-color: var(--color-one);
+         border-radius: 5px;
+         transition: 0.5s;
+      }
+   </style>
+</head>
+<body>
+   <header class="header">
+      <div class="logo">
+         <div class="box1"><i class="fa-solid fa-radiation"></i></div>
+         <div class="box">
+            <a href="/">
+               <i class="fa-solid fa-radiation"></i>
+               <span>CodeShop</span>
+            </a>
+         </div>
+      </div>
+
+      <nav class="navbar navdrop">
+            <i class="fa-solid fa-bars bars"></i>
+         <div class="dropdown">
+            <ul>
+               <li id="home">
+                  <a class="item"  href="/">Home</a>
+                  <!-- <span><i class="fa-solid fa-radiation"></i></span>
+                  <div></div> -->
+               </li>
+               <li id="smartphone">
+                  <a class="item" href="#">SmartPhone</a>
+                   <div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#apple">Apple</a></li>
+                           <li><a href="#samsung">SamSung</a></li>
+                           <li><a href="#oppo">Oppo</a></li>
+                           <li><a href="#xiaomi">Xiaomi</a></li>
+                           <li><a href="#nokia">Nokia</a></li>
+                           <li><a href="#realme">Realme</a></li>
+                           
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li id="laptop">
+                  <a class="item"  href="./laptop.html">Laptop</a>
+                  <!-- <div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#apple">Apple</a></li>
+                           <li><a href="#asus">Asus</a></li>
+                           <li><a href="#dell">Dell</a></li>
+                           <li><a href="#lenovo">Lenovo</a></li>
+                        </ul>
+                     </div>
+                  </div> -->
+               </li>
+               <li id="tablet">
+                  <a  class="item" href="./tablet.html">Tablet</a>
+                  <!--div class="sub-container">
+                     <div class="box"></div>
+                     <div class="sub">
+                        <ul>
+                           <li><a href="#">Apple</a></li>
+                           <li><a href="#">SamSung</a></li>
+                           <li><a href="#">Xiaomi</a></li>
+                           <li><a href="#">Realme</a></li>
+                        </ul>
+                     </div>
+                  </!--div> -->
+               </li>
+            </ul>
+         </div>
+         
+      </nav>
+
+
+      <form action="#" class="search-bar">
+         <input type="text" placeholder="Search...">
+         <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+      </form>
+
+      <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+      
+      <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+      <div class="social">
+         <ul>
+            <li><a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-facebook"></i></span></a></li>
+            <li><a class="youtube" title="Youtube" target="_blank" href="https://youtube.com/@crazycode3366"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+            <li><a class="tiktok" title="Tiktok" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-tiktok"></i></span></a></li>
+            <li><a class="twitter" title="Twitter" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+         </ul>
+      </div>
+   </header>
+
+   <section class="container">
+      
+      <section class="section section-0">
+         <div><img class="img" src="../images/section-0_samsung.jpg" alt=""></div>
+         <!-- <div><img class="img" src="../images/section-0.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_1.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_3.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_4.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_5.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_6.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_7.jpg" alt=""></div> -->
+      </section>
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div.img>img)+span.name-item+span.price))) -->
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div>img.striker)+(div.img>img)+(.info>(span.name-item+span.price))))) -->
+      <section class="section section-nav">
+         <nav class="navbar">
+            <ul>
+               <li><a href="#apple"><img src="../images/apple.jfif" alt="" style="width: 40px;"></a></li>
+               <li><a href="#samsung"><img src="../images/samsung.png" alt="" style="width: 80px;"></a></li>
+               <li><a href="#oppo"><img src="../images/oppo.webp" alt="" style="width: 50px;"></a></li>
+               <li><a href="#xiaomi"><img src="../images/xiaomi.webp" alt="" style="width: 60px;"></a></li>
+               <li><a href="#nokia"><img src="../images/nokia.webp" alt="" style="width: 60px;"></a></li>
+               <li><a href="#realme"><img src="../images/realme.webp" alt="" style="width: 60px;"></a></li>
+            </ul>
+         </nav>
+      </section> 
+
+        <section id="apple" class="section section-1">
+         <div class="header">
+            <a href="#">
+               <h4>Apple</h4>
+            </a>
+         </div>
+         <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ip11.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Iphone 11</span>
+                  <span class="price">10.690.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ip12.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Iphone 12</span>
+                  <span class="price">15.900.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ip13.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Iphone 13</span>
+                  <span class="price">26.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ip14.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Iphone 14</span>
+                  <span class="price">22.450.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ip14.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Iphone 14 plus</span>
+                  <span class="price">24.890.000 đ</span>
+               </div>
+            
+            </div>
+         </div>
+        </section>
+
+        <section id="samsung" class="section section-2">
+        <div class="header">
+            <a href="#">
+                <h4>SAMSUNG</h4>
+             </a>
+        </div>
+             <div class="content">
+                <div class="item item-1 samsung">
+                    <div><img src="../images/apple.png" alt="" class="striker"></div>
+                    <div class="img"><img src="../images/galaxyA14.webp" alt=""></div>
+                    <div class="info">
+                       <span class="name-item">Samsung Galaxy A14</span>
+                       <span class="price">4.990.000 đ</span>
+                    </div>               
+                 </div>
+            <div class="item item-2 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyA34.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung galaxy A34</span>
+                  <span class="price">7.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyA53.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung Galaxy A53</span>
+                  <span class="price">7.590.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyA54.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung Galaxy A54</span>
+                  <span class="price">10.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyA73.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung Galaxy A73 </span>
+                  <span class="price">9.890.000 đ</span>
+               </div>
+
+            </div>
+            <div class="item item-6 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyS20.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung Galaxy S20 </span>
+                  <span class="price">8.890.000 đ</span>
+               </div>
+
+            </div>
+            <div class="item item-7 samsung">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/galaxyS22.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Samsung Galaxy S22 </span>
+                  <span class="price">18.890.000 đ</span>
+               </div>
+            
+            </div>
+        </section>
+
+        <section id="oppo" class="section section-3">
+            <div class="header">
+                <a href="#">
+                   <h4>Oppo</h4>
+                </a>
+             </div>
+             <div class="content">
+            <div class="item item-1 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/reno6.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo Reno 6</span>
+                  <span class="price">7.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/reno7.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo Reno 7</span>
+                  <span class="price">8.190.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/reno8t.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo Reno 8 T</span>
+                  <span class="price">9.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/A16K.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo A16K</span>
+                  <span class="price">2.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/A57.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo A57</span>
+                  <span class="price">3.950.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-6 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/A76.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo A76</span>
+                  <span class="price">5.090.000 đ</span>
+               </div>
+
+            </div>
+            <div class="item item-7 oppo">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/A94.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Oppo A94</span>
+                  <span class="price">5.550.000 đ</span>
+               </div>
+            
+            </div>
+            </div>
+        </section>
+
+        <section id="xiaomi" class="section section-4">
+            <div class="header">
+                <a href="#">
+                   <h4>Xiaomi</h4>
+                </a>
+             </div>
+             <div class="content">
+            <div class="item item-1 xiaomi">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/note11.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Xiaomi Redmi Note 11</span>
+                  <span class="price">3.790.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 xiaomi">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/note12.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Xiaomi Redmi Note 12 </span>
+                  <span class="price">4.490.000 đ</span>
+               </div>
+
+            </div>
+            <div class="item item-3 xiaomi">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/redmi10.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Xiaomi Redmi 10 </span>
+                   <span class="price">3.590.000 đ</span>
+                </div>
+
+                </div>
+                <div class="item item-4 xiaomi">
+                    <div><img src="../images/apple.png" alt="" class="striker"></div>
+                    <div class="img"><img src="../images/note12.webp" alt=""></div>
+                    <div class="info">
+                       <span class="name-item">Redmi Note 12 Pro </span>
+                       <span class="price">5.490.000 đ</span>
+                    </div>
+
+            </div>
+            <div class="item item-5 xiaomi">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/redmi12C.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Xiaomo Redmi 12C</span>
+                   <span class="price">3.190.000 đ</span>
+                </div>
+
+            </div>
+            <div class="item item-6 xiaomi">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/xiaomi12.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Xiaomi 12 </span>
+                   <span class="price">12.490.000 đ</span>
+                </div>
+
+            </div>
+             </div>
+        </section>
+
+        <section id="nokia" class="section section-5">
+            <div class="header">
+                <a href="#">
+                   <h4>Nokia</h4>
+                </a>
+             </div>
+
+             <clas class="content">
+            <div class="item item-1 nokia">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/C20.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Nokia C20</span>
+                  <span class="price">1.890.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 nokia">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/C21p.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Nokia C21 plus</span>
+                  <span class="price">1.890.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 nokia">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/C31.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Nokia C31</span>
+                   <span class="price">2.190.000 đ</span>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="realme" class="section section-6">
+               <div class="header">
+                <a href="#">
+                   <h4>Realme</h4>
+                </a>
+             </div>
+             <div class="content">
+            <div class="item item-1 realme">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/r10.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Realme 10</span>
+                  <span class="price">6.290.000 đ</span>
+               </div>
+            
+            </div>
+
+            <div class="item item-2 realme">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/rC30.webp" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Realme C30</span>
+                  <span class="price">1.990.000 đ</span>
+               </div>
+            </div>
+
+            <div class="item item-3 realme">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/rC21y.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Realme C21y </span>
+                   <span class="price">2.590.000 đ</span>
+                </div>
+                </div>
+
+                <div class="item item-4 realme">
+                    <div><img src="../images/apple.png" alt="" class="striker"></div>
+                    <div class="img"><img src="../images/rC33.webp" alt=""></div>
+                    <div class="info">
+                       <span class="name-item">Realme C33 </span>
+                       <span class="price">3.290.000 đ</span>
+                    </div>
+            
+            </div>
+
+            <div class="item item-5 realme">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/rC35.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Realme C35</span>
+                   <span class="price">4.490.000 đ</span>
+                </div>
+            </div>
+
+            <div class="item item-6 xiaomi">
+                <div><img src="../images/apple.png" alt="" class="striker"></div>
+                <div class="img"><img src="../images/rC55.webp" alt=""></div>
+                <div class="info">
+                   <span class="name-item">Realme C55 </span>
+                   <span class="price">5.490.000 đ</span>
+                </div>
+            </div>
+             </div>
+        </section>
+    
+
+      <section class="section in4">
+         <h2>Mua smartphone giá rẻ chính hãng tại CodeShop</h2>
+
+         <p>
+            SmartPhone hay còn được biết đến với tên gọi điện thoại di động, là một kiểu dạng điện thoại cá nhân được tối giản tuyệt đối nhằm giúp người dùng có thể dễ dàng di chuyển cũng như mang theo bên mình.
+         </p>
+
+         <h2>Định nghĩa về Smartphone</h2>
+
+         <p>
+            Smartphone hay còn được biết tới là một loại điện thoại di động với hệ điều hành được tích hợp khiến cho 1 chiếc điện thoại trở nên đa công dụng hơn rất nhiều. Điện thoại di động từ trước đến nay phát triển theo 2 xu hướng. 1 là rất nhỏ, tiên lợi mang đi mọi nơi. 2 là to như chiếc tablet kết hợp giữa điện thoại và máy tính. Những chiếc điện thoại di động thường bỏ túi, thường được kết hợp các tính năng của một chiếc điện thoại thông thường như nghe và thực hiện các cuộc gọi thông thường, nhận tin nhắc văn bản và các tính năng phổ biến khác như là máy nghe nhạc, lịch, máy tính, trò chơi, máy ảnh và cả quáy quay video nữa, Hầu hết những chiếc điện thoại di động hiện nay đều có thể truy cập internet và cài đặt được nhiều ứng dụng từ bên thứ 3 trong CH play hay Appstore. 
+         </p>
+
+         <h2>Smartphone thương hiệu nào tốt và đáng mua hiện nay?</h2>
+
+         <p>
+            Trong nhiều năm trở lại đây, trên thị trường Việt Nam nói riêng cũng như thế giới nói chung đã có rất nhiều hãng sản xuất xuất hiện và cùng nhau cạnh tranh trên thị trường điện thoại di động. Vậy nên Smartphone cũng được chia ra làm nhiều phân khúc từ điiẹn thoại giá rẻ cho tới cao cấp, chuyên làm việc đến chuyên chơi game, v.v. Dưới đây,CodeShop xin được liệt kê một vài dòng SmartPhone tốt và đáng mua tới từ những thương hiệu nổi tiếng.
+        </p>
+
+         <h2>SmartPhone giá rẻ chính hãng tại CodeShop</h2>
+         <p>Hiện tại, có rất nhiều mẫu SmartPhone khác nhau đang có mặt trên thị trường, và để chọn được những sản phẩm chất lượng, chính hãng thì địa chỉ mà khách hàng “chọn mặt gửi vàng” luôn là yếu tố quan trọng nhất. CodeShop tự hào là địa chỉ uy tín, chuyên cung cấp các sản phẩm SmartPhone chính hãng với chính sách bảo hành, đổi trả hấp dẫn.</p>
+      </section>
+      
+      <div class="social2">
+         <div class="square item1">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Product</h2>
+               <a href="#"><i class="fa-regular fa-circle-check"></i></a>
+            </div>
+         </div>
+         
+         <div class="square item2">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>FreeShip</h2>
+               <a href="#"><i class="fa-solid fa-truck-fast"></i></a>
+            </div>
+         </div>
+
+         <div class="square item3">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Returns</h2>
+               <a href="#"><i class="fa-solid fa-rotate"></i></a>
+            </div>
+         </div>
+         
+      </div>
+
+      <footer id="footer">
+         <div class="box">
+            <div class="item item1">
+               <span>Hỗ Trợ - Dịch Vụ</span>
+               <span>Mua hàng trả góp</span>
+               <span>Tra cứu đơn hàng</span>
+               <span>Chính sách bảo hành</span>
+               <span>Chính sách bảo mật</span>
+               <span>Câu hỏi thường gặp</span>
+            </div>
+            <div class="item item2">
+               <span>Thông tin liên hệ</span>
+               <span>Bán hàng Online</span>
+               <span>Chăm sóc khách hàng</span>
+               <span>Hỗ trợ kỹ thuật</span>
+               <span>Liên hệ</span>
+            </div>
+            <div class="item item3">
+               <div class="atm-box">
+                  <h2 class="atm-content">Thanh toán miễn phí</h2>
+                  <div class="atm">
+                     <img src="../../assets/images/logo-atm.png" alt="">
+                     <img src="../../assets/images/logo-jcb.png" alt="">
+                     <img src="../../assets/images/logo-master.png" alt="">
+                     <img src="../../assets/images/logo-samsungpay.png" alt="">
+                     <img src="../../assets/images/logo-visa.png" alt="">
+                     <img src="../../assets/images/logo-vnpay.png" alt="">
+                  </div>   
+               </div>
+            </div>
+            <!-- <div class="item item4">
+               ???
+            </div> -->
+         </div>
+         <div class="box2">
+            <span>Trường Đại Học Cần Thơ - Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ.</span>
+         </div>
+      </footer>
+
+   </section>
+   <div class="snow_wrap">
+      <div class="snow"></div>
+   </div>
+</body>
+</html>

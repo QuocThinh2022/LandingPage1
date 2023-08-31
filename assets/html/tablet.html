@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CodeShop</title>
+   <link rel="icon" href="../images/icon.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../css/reset.css">
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/laptop.css">
+
+   <style>
+      .navbar ul #tablet:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: calc(-100vw/1500*2);
+         width: 100%;
+         height: calc(100vw/1500*2);
+         background-color: var(--color-one);
+         border-radius: 5px;
+         transition: 0.5s;
+      }
+   </style>
+</head>
+<body>
+   <header class="header">
+      <div class="logo">
+         <div class="box1"><i class="fa-solid fa-radiation"></i></div>
+         <div class="box">
+            <a href="/">
+               <i class="fa-solid fa-radiation"></i>
+               <span>CodeShop</span>
+            </a>
+         </div>
+      </div>
+
+      <nav class="navbar navdrop">
+         <i class="fa-solid fa-bars bars"></i>
+      <div class="dropdown">
+         <ul>
+            <li id="home">
+               <a class="item"  href="/">Home</a>
+               <!-- <span><i class="fa-solid fa-radiation"></i></span>
+               <div></div> -->
+            </li>
+            <li id="smartphone">
+               <a class="item" href="./smartphone.html">SmartPhone</a>
+               <!-- <div class="sub-container">
+                  <div class="box"></div>
+                  <div class="sub">
+                     <ul>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">SamSung</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Realme</a></li>
+                     </ul>
+                  </div>
+               </div> -->
+            </li>
+            <li id="laptop">
+               <a class="item"  href="./laptop.html">Laptop</a>
+               <!-- <div class="sub-container">
+                  <div class="box"></div>
+                  <div class="sub">
+                     <ul>
+                        <li><a href="#apple">Apple</a></li>
+                        <li><a href="#asus">Asus</a></li>
+                        <li><a href="#dell">Dell</a></li>
+                        <li><a href="#lenovo">Lenovo</a></li>
+                     </ul>
+                  </div>
+               </div> -->
+            </li>
+            <li id="tablet">
+               <a  class="item" href="./tablet.html">Tablet</a>
+               <div class="sub-container">
+                  <div class="box"></div>
+                  <div class="sub">
+                     <ul>
+                        <li><a href="#ipad">Apple</a></li>
+                        <li><a href="#samsung">SamSung</a></li>
+                        <li><a href="#lenovo">Lenovo</a></li>
+                        <li><a href="#xiaomi">Xiaomi</a></li>
+                        <li><a href="#mastel">Mastel</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div>
+      
+   </nav>
+
+
+      <form action="#" class="search-bar">
+         <input type="text" placeholder="Search...">
+         <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+      </form>
+
+      <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+      
+      <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+      <div class="social">
+         <ul>
+            <li><a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-facebook"></i></span></a></li>
+            <li><a class="youtube" title="Youtube" target="_blank" href="https://youtube.com/@crazycode3366"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+            <li><a class="tiktok" title="Tiktok" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-tiktok"></i></span></a></li>
+            <li><a class="twitter" title="Twitter" target="_blank" href="https://www.facebook.com/profile.php?id=100072487894300"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+         </ul>
+      </div>
+   </header>
+
+   <section class="container">
+      
+      <section class="section section-0">
+         <div><img class="img" src="../images/section-0_samsung.jpg" alt=""></div>
+         <!-- <div><img class="img" src="../images/section-0.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_1.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_3.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_4.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_5.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_6.jpg" alt=""></div> -->
+         <!-- <div><img class="img" src="../images/section-0_7.jpg" alt=""></div> -->
+      </section>
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div.img>img)+span.name-item+span.price))) -->
+      <!-- section.section.section-$*4>((.header>a>h4)+.content>(div.item.item-$.apple*5>((div>img.striker)+(div.img>img)+(.info>(span.name-item+span.price))))) -->
+      <section class="section section-nav">
+         <nav class="navbar">
+            <ul>
+               <li><a href="#ipad"><img src="../images/logoipad.jfif" alt="" style="width: 40px;"></a></li>
+               <li><a href="#samsung"><img src="../images/logosamsung.png" alt="" style="width: 120px;"></a></li>
+               <li><a href="#lenovo"><img src="../images/lenovo.png" alt=""></a></li>
+               <li><a href="#xiaomi"><img src="../images/logoxiaomi.jfif" alt="" style="width: 30px;"></a></li>
+               <li><a href="#mastel"><img src="../images/logo-masstel-4.webp" alt=""></a></li>
+            </ul>
+         </nav>
+      </section>
+
+      <section id="ipad" class="section section-1">
+         <div class="header">
+            <a href="#">
+               <h4>IPad</h4>
+            </a>
+         </div>
+         <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/iPad-9-wifi-trang-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng iPad 9 WiFi 64GB</span>
+                  <span class="price">Máy tính bảng iPad 9 WiFi 64GB đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/iPad-gen-10-1-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng iPad 10 WiFi 64GB</span>
+                  <span class="price">12.490.000</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ipad-pro-m1-11-inch-wifi-bac-thumb-600x600.jpeg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng iPad Pro M1 11 inch WiFi 128GB</span>
+                  <span class="price">20.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ipad-mini-6-wifi-starlight-1-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng iPad mini 6 WiFi 64GB</span>
+                  <span class="price">12.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/ipad-pro-2021-129-inch-silver-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng iPad Pro M1 12.9 inch WiFi Cellular 128GB</span>
+                  <span class="price">29.290.000 đ</span>
+               </div>
+            
+            </div>
+        </div>
+      </section>
+      <section id="samsung" class="section section-2">
+        <div class="header">
+            <a href="#">
+                <h4>SAMSUNG</h4>
+             </a>
+        </div>
+             <div class="content">
+                <div class="item item-1 apple">
+                    <div><img src="../images/apple.png" alt="" class="striker"></div>
+                    <div class="img"><img src="../images/samsung-galaxy-tab-a8-thumb-1-600x600.jpg" alt=""></div>
+                    <div class="info">
+                       <span class="name-item">Máy tính bảng Samsung Galaxy Tab A8</span>
+                       <span class="price">6.990.000 đ</span>
+                    </div>               
+                 </div>
+            <div class="item item-2 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/samsung-galaxy-tab-a7-lite-gray-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Samsung Galaxy Tab A7 Lite</span>
+                  <span class="price">3.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/samsung-tab-s8-ultra-thumb-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Samsung Galaxy Tab S8 Ultra 5G </span>
+                  <span class="price">27.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/Samsung-Galaxy-Tab-S7-FE-Wifi-green-1-660x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Samsung Galaxy Tab S7 FE WiFi</span>
+                  <span class="price">11.990.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/samsung-galaxy-tab-s6-lite-600x600-2-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Samsung Galaxy Tab S6 Lite </span>
+                  <span class="price">9.490.000 đ</span>
+               </div>
+            
+            </div>
+        </div>
+      </section>
+      <section id="lenovo" class="section section-3">
+            <div class="header">
+                <a href="#">
+                   <h4>Lenovo</h4>
+                </a>
+             </div>
+             <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/lenovo-tab-a22-xam-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Lenovo Tab M8</span>
+                  <span class="price">2.490.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/lenovo-yoga-tab-11-thumb-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Lenovo Yoga Tab 11</span>
+                  <span class="price">8.890.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-3 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/lenovo-tab-p11-plus-2-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Lenovo Tab P11 Plus</span>
+                  <span class="price">6.190.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-4 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/lenovo-tab-m10-gen-3-1-2-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Lenovo Tab M10 (Gen 3) 3GB/32GB</span>
+                  <span class="price">4.690.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-5 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/tab-m10-gen-2-600x600-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Lenovo Tab M10 - Gen 2</span>
+                  <span class="price">3.890.000 đ</span>
+               </div>
+            
+            </div>
+            </div>
+      </section>
+      <section id="xiaomi" class="section section-4">
+            <div class="header">
+                <a href="#">
+                   <h4>Xiaomi</h4>
+                </a>
+             </div>
+             <div class="content">
+            <div class="item item-1 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/Redmi-Pad-Sliver-thumb-org-1-2-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Xiaomi Redmi Pad (4GB/128GB)</span>
+                  <span class="price">6.190.000 đ</span>
+               </div>
+            
+            </div>
+            <div class="item item-2 apple">
+               <div><img src="../images/apple.png" alt="" class="striker"></div>
+               <div class="img"><img src="../images/Redmi-Pad-green-thumb-org-600x600.jpg" alt=""></div>
+               <div class="info">
+                  <span class="name-item">Máy tính bảng Xiaomi Redmi Pad (3GB/64GB) </span>
+                  <span class="price">5.490.000 đ</span>
+               </div>
+            
+            </div>
+            </div>
+   </section>
+
+      <section id="mastel" class="section section-5">
+         <div class="header">
+            <a href="#">
+               <h4>Masstel</h4>
+            </a>
+         </div>
+         <div class="content">
+        <div class="item item-3 apple">
+           <div><img src="../images/apple.png" alt="" class="striker"></div>
+           <div class="img"><img src="../images/masstel-tab-10s-đen-1-1-2-3-4-600x600.jpg" alt=""></div>
+           <div class="info">
+              <span class="name-item">Máy tính bảng Masstel Tab 10S</span>
+              <span class="price">2.890.000 đ</span>
+           </div>
+        
+        </div>
+        <div class="item item-1">
+            <div class="img"><img src="../images/masstel-tab-82-den-1-600x600.jpg" alt=""></div>
+            <div class="info">
+               <span class="name-item">Máy tính bảng Masstel Tab 10A</span>
+               <span class="price">2.690.000 đ</span>
+            </div>
+           
+         </div>
+         <div class="item item-2">
+            <div class="img"><img src="../images/masstel-tab-82-den-1-600x600.jpg" alt=""></div>
+            <div class="info">
+               <span class="name-item">Máy tính bảng Masstel Tab 8.2</span>
+               <span class="price">2.390.000 đ</span>
+            </div>
+            
+         </div>
+        </div>
+
+      </section>
+
+      <section class="section in4">
+         <h2>Mua Tablet giá rẻ chính hãng tại CodeShop</h2>
+         <p>
+            Tablet hay còn được biết đến với tên gọi máy tính bảng, là một kiểu dạng máy tính cá nhân được tối giản tuyệt đối nhằm giúp người dùng có thể dễ dàng di chuyển cũng như mang theo bên mình.
+         </p>
+         <h2>Định nghĩa về Tablet</h2>
+         <p>
+            Một máy tính bảng hay máy tính bảng, là một máy tính xách tay mà sử dụng một màn hình cảm ứng như thiết bị đầu vào chính của nó. Hầu hết các tablet là hơi nhỏ hơn và cân nặng ít hơn so với máy tính xách tay bình thường. Trong khi một số viên nén bao gồm gấp ra bàn phím, những người khác, chẳng hạn như iPad của Apple và Motorola Xoom, chỉ cung cấp đầu vào màn hình cảm ứng.
+         </p>
+         <h2>Tablet thương hiệu nào tốt và đáng mua hiện nay?</h2>
+         <p>Trong nhiều năm trở lại đây, trên thị trường Việt Nam nói riêng cũng như thế giới nói chung đã có rất nhiều hãng sản xuất xuất hiện và cùng nhau cạnh tranh trên thị trường máy tính bảng xách tay. Vậy nên tablet cũng được chia ra làm nhiều phân khúc từ máy tính bảng giá rẻ cho tới cao cấp, chuyên làm việc đến chuyên chơi game, v.v. Dưới đây,CodeShop xin được liệt kê một vài dòng tablet tốt và đáng mua tới từ những thương hiệu nổi tiếng.</p>
+         <h2>Tablet giá rẻ chính hãng tại CodeShop</h2>
+         <p>Hiện tại, có rất nhiều mẫu Table khác nhau đang có mặt trên thị trường, và để chọn được những sản phẩm chất lượng, chính hãng thì địa chỉ mà khách hàng “chọn mặt gửi vàng” luôn là yếu tố quan trọng nhất. CodeShop tự hào là địa chỉ uy tín, chuyên cung cấp các sản phẩm Tablet chính hãng với chính sách bảo hành, đổi trả hấp dẫn.</p>
+      </section>
+      
+      <div class="social2">
+         <div class="square item1">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Product</h2>
+               <a href="#"><i class="fa-regular fa-circle-check"></i></a>
+            </div>
+         </div>
+         
+         <div class="square item2">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>FreeShip</h2>
+               <a href="#"><i class="fa-solid fa-truck-fast"></i></a>
+            </div>
+         </div>
+         <div class="square item3">
+            <span></span><span></span><span></span>
+            <div class="content">
+               <h2>Returns</h2>
+               <a href="#"><i class="fa-solid fa-rotate"></i></a>
+            </div>
+         </div>
+         
+      </div>
+
+      <footer id="footer">
+         <div class="box">
+            <div class="item item1">
+               <span>Hỗ Trợ - Dịch Vụ</span>
+               <span>Mua hàng trả góp</span>
+               <span>Tra cứu đơn hàng</span>
+               <span>Chính sách bảo hành</span>
+               <span>Chính sách bảo mật</span>
+               <span>Câu hỏi thường gặp</span>
+            </div>
+            <div class="item item2">
+               <span>Thông tin liên hệ</span>
+               <span>Bán hàng Online</span>
+               <span>Chăm sóc khách hàng</span>
+               <span>Hỗ trợ kỹ thuật</span>
+               <span>Liên hệ</span>
+            </div>
+            <div class="item item3">
+               <div class="atm-box">
+                  <h2 class="atm-content">Thanh toán miễn phí</h2>
+                  <div class="atm">
+                     <img src="../../assets/images/logo-atm.png" alt="">
+                     <img src="../../assets/images/logo-jcb.png" alt="">
+                     <img src="../../assets/images/logo-master.png" alt="">
+                     <img src="../../assets/images/logo-samsungpay.png" alt="">
+                     <img src="../../assets/images/logo-visa.png" alt="">
+                     <img src="../../assets/images/logo-vnpay.png" alt="">
+                  </div>   
+               </div>
+            </div>
+            <!-- <div class="item item4">
+               ???
+            </div> -->
+         </div>
+         <div class="box2">
+            <span>Trường Đại Học Cần Thơ - Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ.</span>
+         </div>
+      </footer>
+   </section>
+
+   
+   <div class="snow_wrap">
+      <div class="snow"></div>
+   </div>
+</body>
+</html>

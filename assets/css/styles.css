@@ -841,6 +841,11 @@ header .home a:hover {
       width: calc(1/2*100% - 12px);
       height: calc(75vw/2*345/230);
    }
+
+   #footer .box{
+      flex-direction: column;
+      margin-bottom: 10px;
+   }
 }
 
 .atm-box .atm-content {
